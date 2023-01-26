@@ -1,19 +1,20 @@
-import Sidebar from 'components/Sidebar'
+import Center from "components/Center";
+import Sidebar from "components/Sidebar";
 
- function Home() {
+function Home() {
   return (
     <>
-    <div >
-      <main className='bg-black h-screen overflow-hiden'>
-      <Sidebar/>
-      {/* center */}
-      </main>
       <div>
-        {/* player */}
+        <main className="bg-black h-screen overflow-hiden ">
+          <div className="flex">
+            <Sidebar />
+            {/* center */}
+            <Center />
+          </div>
+        </main>
+        <div>{/* player */}</div>
       </div>
-
-    </div>
     </>
-  )
+  );
 }
 export default Home;
