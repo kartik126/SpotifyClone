@@ -29,36 +29,36 @@ function Sidebar() {
   return (
     <>
       <div className="hidden md:inline-flex text-gray-500 p-5 text-xs lg:text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen sm:max-w-[12rem] lg:max-w-[15rem] pb-36">
-        <div className="space-y-4">
+        <div className="space-y-4 ">
         <button
-          className="flex items-center space-x-2 hover:text-white"
-          onClick={() => signOut()}
+          className="flex items-center justify-between  hover:text-white"
+        
         >
-          <HomeIcon className="h-5 w-5" />
-          logout
+          <HomeIcon className="h-5 w-5 mx-1" />
+          Home
         </button>
 
         <button className="flex items-center hover:text-white  space-x-2">
-          <MagnifyingGlassIcon className="h-5 w-5" />
+          <MagnifyingGlassIcon className="h-5 w-5 mx-1" />
           Search
         </button>
 
         <button className="flex items-center  hover:text-white space-x-2 ">
-          <BuildingLibraryIcon className="h-5 w-5" />
+          <BuildingLibraryIcon className="h-5 w-5 mx-1" />
           Your Library
         </button>
         <hr className="border-t-[0.1px] border-gray-900" />
 
         <button className="flex items-center  space-x-2 hover:text-white">
-          <PlusIcon className="h-5 w-5 " />
+          <PlusIcon className="h-5 w-5 mx-1" />
           Create Playlist
         </button>
         <button className="flex items-center  hover:text-white space-x-2 ">
-          <HeartIcon className="h-5 w-5" />
+          <HeartIcon className="h-5 w-5 mx-1" />
           Liked Songs
         </button>
         <button className="flex items-center hover:text-white  space-x-2">
-          <RssIcon className="h-5 w-5" />
+          <RssIcon className="h-5 w-5 mx-1" />
           Your Episodes
         </button>
 
